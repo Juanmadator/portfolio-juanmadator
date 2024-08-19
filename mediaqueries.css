@@ -11,3 +11,21 @@
     }
 }
 
+@media screen and (max-width:768px){
+   #profile{
+    display: grid;
+   }
+
+   .section__pic-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+   }
+   .section__pic-container img{
+   max-width: 300px;
+   max-height: 300px;
+    place-self: center;
+   }
+}
+
+

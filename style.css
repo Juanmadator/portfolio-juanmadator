@@ -28,6 +28,32 @@ nav,
     display: flex;
 }
 
+#desktop-nav{
+    top: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#hamburger-nav{
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top:0;
+}
+
+.hamburger-menu .menu-links{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-menu .menu-links li a:hover{
+    background-color: rgb(163, 162, 162);
+    color: white;
+}
 a {
     font-family: 'Poppins';
     text-decoration: none;
@@ -40,7 +66,7 @@ a {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 11vh;
 }
 
 .nav-links {
@@ -58,11 +84,10 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    cursor: pointer;
+    
 }
 
-.logo:hover {
-    cursor: default;
-}
 
 
 /*MENU DESPLEGABLE*/
@@ -164,7 +189,76 @@ a:hover {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    margin-top: 100px;
 }
+
+.abajo{
+    padding: 40px;
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+.abajo img{
+    height: 3rem;
+}
+
+
+.cv {
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.6s all ease-in-out; /* Transición para cambios suaves */
+}
+
+
+
+.cv-text,
+.cv-icon {
+    display: inline-block;
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transiciones para suavizar el cambio */
+}
+
+.cv-text {
+    /* Inicialmente visible */
+    opacity: 1;
+    visibility: visible;
+}
+
+.cv-icon {
+    /* Inicialmente oculto */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Inicia el icono oculto (escala 0) */
+    font-size: 16px;
+}
+
+.cv:hover .cv-text {
+    opacity: 0; /* Oculta el texto */
+    visibility: hidden; /* Hace el texto completamente invisible y no interactivo */
+}
+
+.cv:hover .cv-icon {
+    opacity: 1; /* Muestra el icono */
+    visibility: visible; /* Hace el icono visible */
+    transform: translate(-50%, -50%) scale(1); /* Muestra y escala el icono al tamaño original */
+}
+
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Ajusta el valor para definir la distancia del movimiento */
+    }
+  }
 
 
 .section__pic-container{
@@ -175,6 +269,9 @@ a:hover {
 }
 
 .section__pic-container img{
+    align-self: center;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -206,7 +303,7 @@ a:hover {
 }
 
 
-#socials_container {
+#socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -249,17 +346,18 @@ a:hover {
 
 
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn-color-1{
     background-color: rgb(53, 53, 53);
     color: white;
 
 }
 
-
-.btn-color-1:hover {
-    background-color: rgb(0, 0, 0);
+.btn-color-2:hover{
+    color: black;
 }
+
+
+
 
 .btn-color-2:hover {
    border: rgb(255,255,255) 0.1rem solid;
@@ -273,3 +371,101 @@ background: none;
 .btn-container{
     gap: 2rem;
 }
+
+img.about-pic{
+    border-radius: 10%;
+}
+
+#about{
+    position: relative;
+    background-color:  rgb(50, 55, 92);
+    color: white;
+    padding: 70px 100px;
+    border: 10px solid rgb(53, 42, 90);
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-containers,.about-details-container{
+    display: flex;
+}
+
+.about-containers{
+    gap: 2rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.arrow{
+    position: absolute;
+    right: 4rem;
+    bottom: 2.5rem;
+}
+
+.arrow-1{
+filter: invert(100);
+
+}
+
+
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 1rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    color: rgb(32, 36, 66);
+}
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.text-container p{
+    color: white;
+    opacity: 0.6;
+}
+
+#experience{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+}
+
+#experience{
+    position: relative;
+}
+
+
+.cv
+{
+    color: white;
+        background-color:  rgb(50, 55, 92);
+    
+}
+
+
+/*SOLUCIONAR ABAJO*/

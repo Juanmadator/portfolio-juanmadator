@@ -1,65 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Juanmadator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
-   <nav id="desktop-nav">
-    <div class="logo">Juanmadator</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-   </nav>
+    <nav id="desktop-nav">
+        <div class="logo">Juanmadator</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
 
-   <nav id="hamburger-nav">
-    <div class="logo">Juanmadator</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav id="hamburger-nav">
+        <div class="logo">Juanmadator</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/perfil-photo.JPG" alt="Imagen Juan Manuel Adame">
         </div>
 
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-   </nav>
+        <div class="section__text">
+            <p class="section__text__p1">¡Hola!, soy </p>
+            <h1 class="title">Juanma</h1>
+            <p class="section__text__p2 ">Desarrollador Full Stack</p>
 
-   <section id="profile">
-    <div class="section__pic-container">
-        <img src="assets/perfil-photo.JPG" alt="Imagen Juan Manuel Adame">
-    </div>
+            <div class="btn-container curri">
+                <button class="btn btn-color-2 cv" onclick="window.open('./assets/AdameTorronterasJuanManuelCV.pdf')">
+                    <span class="cv-text">Descargar CV</span>
+                    <span class="cv-icon">📑</span>
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/juanmadator/'">
+                <img src="./assets/github.png" alt="Mi perfil de Github" class="icon"
+                    onclick="location.href='https://github.com/Juanmadator'">
+            </div>
 
-    <div class="section__text">
-        <p class="section__text__p1">¡Hola!, soy </p>
-        <h1 class="title">Juanma</h1>
-        <p class="section__text__p2">Desarrollador Full Stack</p>
+        </div>
 
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/AdameTorronterasJuanManuelCV.pdf')">Descargar CV</button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
+    </section>
+
+    <div class="abajo"> <img src="./assets/arrow.png" onclick="window.location.href='./#about'" alt="Flecha" class="icon"></div>
+
+
+    <section id="about">
+        <h1 class="title about-me">Sobre mí</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpeg" alt="Foto de perfil" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Icono de experiencia" class="icon">
+                        <h3>Experiencia</h3>
+                        <p>3 meses <br>Desarrollador BackEnd </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Icono de educación" class="icon">
+                        <h3>Estudios</h3>
+                        I.E.S Trassierra
+                        <p>Desarrollo de Aplicaciones Web 
+                        <br>2022-2024</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Me llamo Juan Manuel, tengo 20 años. Me gusta mucho la programación y estar ocupado.
+                        <p>He desarrollado aplicaciones web con Angular 16/17, he programado en PHP,Java, NodeJs, TypeScript y considero que uno de mis fuertes es trabajar bajo presión </p>  
+                        
+                    <br>
+                      <p> He realizado prácticas como BackEnd Developer en Milán, Italia durante 3 meses. Desarrollé tareas como la gestión y creación de una API REST con Spring Boot, una base de datos con MySql, gestión de dependencias con Maven, generación de código con SwaggerEditor</p> 
+                       
+                   
+                </div>
+            </div>
         </div>
-        <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/juanmadator/'">
-            <img src="./assets/github.png" alt="Mi perfil de Github" class="icon" onclick="location.href='https://github.com/Juanmadator'">
+
+        <img src="./assets/arrow.png" onclick="window.location.href='./#experience'" alt="Flecha" class="icon arrow arrow-1">
+    </section>
+
+
+    <section id="experience">
+        <p class="section__text__p1">Explorar mis</p>
+        <h1 class="title">Tecnologías</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Desarrollador FrontEnd</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Avanzado</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Avanzado</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Intermedio/Avanzado</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>Angular Material</h3>
+                                <p>Básico/Intermedio
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Básico/Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermedio/Avanzado
+                        </article>
+                    </div>
+
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermedio/Avanzado
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experizencia" class="icon">
+
+                            <div>
+                                <h3>AJAX</h3>
+                                <p>Intermedio/Avanzado
+                        </article>
+                    </div>
+                </div>
+
+
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Desarrollador BackEnd</h2>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>SpringBoot</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>Laravel</h3>
+                                <p>Básico/Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Intermedio/Avanzado</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
+
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Básico/Intermedio</p>
+                            </div>
+                        </article>
+                    </div>
+
+                  
+
+                  
+
+                </div>
+            </div>
+           
         </div>
-    </div>
-   </section>
+
+        <img src="./assets/arrow.png" onclick="window.location.href='./#projects'" alt="Flecha" class="icon arrow">
+
+    </section>
 
     <script src="app.js"></script>
 </body>
+
 </html>
