@@ -22,3 +22,10 @@ function scroll(){
         behavior:"smooth"
     })
 }
+
+
+document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', function() {
+        this.classList.toggle('clicked');
+    });
+});
