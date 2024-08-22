@@ -1,323 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Juanmadator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
 
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Juanmadator</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
+<!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex justify-content-between align-items-center" href="index.html"><i class='uil uil-user'></i> Juanmadator</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="Sobre mí">Sobre mí</span></a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resumen">Resumen</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contacto">Contacto</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
         </div>
     </nav>
 
-
-    <nav id="hamburger-nav">
-        <div class="logo">Juanmadator</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="about-text">
+                    <small class="small-text">Bienvenido a mi<span class="mobile-block">portfolio web</span></small>
+                    <h1 class="animated animated-text">
+                        <span class="mr-2">¡Hola!, soy</span>
+                        <div class="animated-info">
+                            <span class="animated-item">Juanma</span>
+                            <span class="animated-item">Programador</span>
+                            <span class="animated-item">Junior</span>
+                        </div>
+                    </h1>
+                    <p>Mi objetivo es crecer como persona, aprender de los demás y sobre todo mejorar mis skills de programador. Tengo mucha ilusión y ganas por aprender cosas nuevas</p>
+                    <div class="custom-btn-group mt-4">
+                        <a href="./images/project/AdameTorronterasJuanManuelCV.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Descargar CV</a>
+                        <a href="https://www.linkedin.com/in/juanmadator/" class="btn custom-btn custom-btn-link icon-linkedin"><img src="./images/project/linkedin.png" alt=""></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="about-image svg text-right imagen-yo"> <!-- Añadir la clase 'text-right' -->
+                    <img src="images/undraw/D80F1618-5906-4A0D-BC56-962548410A5C.JPG" class="profile-img" alt="svg image">
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__pic-container section__pic-container-primera">
-                <img src="assets/perfil-photo.JPG" alt="Imagen Juan Manuel Adame" class="main-image">
-               
         </div>
         
+        </div>
+    </section>
 
-        <div class="section__text">
-            <p class="section__text__p1 texto-desarrollador-1">¡Hola!, soy </p>
-            <h1 class="title main">Juan Manuel</h1>
-            <h2 class="main-2">Adame</h2>
-            <p class="section__text__p2 texto-desarrollador">Desarrollador </p>
-            <p class="section__text__p2 texto-desarrollador-2">Full Stack </p>
+    <section class="info">
+      <div class="container">
+        <div class="row">
 
+          <div class="col-12">
+            <h1 class="animated animated-text quiero-ser">
+              <span class="mr-2">¿Quién </span>
+              <div class="animated-info">
+                  <span class="animated-item">soy?</span>
+                  <span class="animated-item">puedo ser?</span>
+                  <span class="animated-item">quiero ser?</span>
+              </div>
+          </h1>
+          </div>
+          <!-- Columna de 1/3 en pantallas grandes -->
+          <div class="col-lg-4 col-md-12">
+           <p>¿Quién soy?, mi nombre es Juan Manuel Adame Torronteras y tengo 20 años. Comencé a estudiar programación en 2022 después de estudiar bachillerato después de una pandemia, sin saber que estudiar y que hacer con mi vida</p>
+          </div>
+    
+          <!-- Columna de 2/3 en pantallas grandes -->
+          <div class="col-lg-8 col-md-12">
+            <p>Decidí estudiar un ciclo superior que sabía que estaba relacionado con ordenadores pero lo que yo no sabía es que me encantaría y que querría dedicarme a ello profesionalmente. Se que tengo muchísimas ganas de apreder y aportar valor, quiero ser mejor persona cada día y vivir nuevos retos que me aporten experiencia y me den felicidad y dolores de cabeza! Y como me encanta poder vivir cosas nuevas , opté por hacer las prácticas en Milan, Italia, y considero que me han aportado madurez y buena toma de decisiones</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
-            <div class="btn-container curri">
-                <button class="btn btn-color-2 cv" onclick="window.open('./assets/AdameTorronterasJuanManuelCV.pdf')">
-                    <span class="cv-text">Descargar CV</span>
-                    <span class="cv-icon">📑</span>
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
-            </div>
-            <div id="socials-container">
-                <div class="linkedin">
-                    <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/juanmadator/'">
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiencia</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2024</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Desarrollador BackEnd</span><small>Coderit S.R.L</small></h3>
+                                  <p>Prácticas como desarrollador backend en Milán, Italia desde Marzo hasta Junio de 2024. Desarrollé una API REST utilizando Spring Boot, integrando Liquibase para la gestión de la base de datos, Swagger Editor para la documentación, Maven como gestor de dependencias, y Postman para probar los endpoints. Implementé JWT para la autenticación de manera segura y eficiente.</p>
+                             </div>
+                        </div>
+
+                      
+
+                    </div>
                 </div>
-               <div class="git">
-                <img src="./assets/github.png" alt="Mi perfil de Github" class="icon"
-                onclick="location.href='https://github.com/Juanmadator'">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Estudios</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2024</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Desarrollo Web</span><small>I.E.S Trassierra</small></h3>
+                                  <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías Back y Front End realizando prácticas en el extranjero durante 3 meses</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2022</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Bachillerato Tecnológico</span><small>Santa Victoria</small></h3>
+                                <p>Me aventuré por la rama tecnológica y descubrí que me encantaba la tecnología y la informática</p>
+                            </div>
+                        </div>
+                        
+                      
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-6 col-12">
+                <h2 class="mb-4">FrontEnd</h2>
+
+                  <div class="timeline">
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                           <span><img src="./images/project/icons8-javascript-240.png" alt=""></span>
+                      </div>
+                      <div class="timeline-info">
+                           <h4><span>JavaScript</span> <small>I.E.S Trassierra</small></h3>
+                           <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                      </div>
+                 </div>
+                      <div class="timeline-wrapper">
+                           <div class="timeline-yr">
+                                <span><img src="./images/project/icons8-angular-240.png" alt=""></span>
+                           </div>
+                           <div class="timeline-info">
+                                <h4><span>Angular</span> <small>Coderit S.R.L</small></h4>
+                                <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                           </div>
+                      </div>
+
+
+                      <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                             <span><img src="./images/project/icons8-oreja-240.png" alt=""></span>
+                        </div>
+                        <div class="timeline-info">
+                             <h4><span>Bootstrap</span><small>I.E.S Trassierra</small></h4>
+                             <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                        </div>
+                   </div>
+
+                   <div class="timeline-wrapper">
+                    <div class="timeline-yr">
+                         <span><img src="./images/project/icons8-viento-de-cola-css-240.png" alt=""></span>
+                    </div>
+                    <div class="timeline-info">
+                         <h4><span>Tailwind</span><small>I.E.S Trassierra</small></h3>
+                         <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                    </div>
                </div>
-            </div>
 
-        </div>
-
-    </section>
-
-    <div class="abajo"> <img src="./assets/arrow.png" onclick="window.location.href='./#about'" alt="Flecha"
-            class="icon"></div>
-
-            
-    <section id="about">
-        <div class="custom-shape-divider-top-1724281488">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h1 class="title about-me">EXPERIENCIA</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpeg" alt="Foto de perfil" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="https://static.wixstatic.com/media/57840c_329d115320ae47339b9b8cbe1fcc8126~mv2.png/v1/fill/w_70,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/coderit_pict_circle_white_color_on_transparent_png_x512_border.png" alt="Icono de experiencia" class="icon">
-                        <h3>Desarrollador BackEnd</h3>
-                        <p>Marzo 2024 - Junio 2024 <br> </p>
-                    </div>
-                   
+               <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                     <span><img src="./images/project/jQuery.png" alt=""></span>
                 </div>
-
-                <div class="text-container">
-                    <p>Me llamo Juan Manuel, tengo 20 años. Me gusta mucho la programación y estar ocupado.
-                    <p>He desarrollado aplicaciones web con Angular 16/17, he programado en PHP,Java, NodeJs, TypeScript
-                        y considero que uno de mis fuertes es trabajar bajo presión </p>
-
-                    <br>
-                    <p> He realizado prácticas como BackEnd Developer en Milán, Italia durante 3 meses. Desarrollé
-                        tareas como la gestión y creación de una API REST con Spring Boot, una base de datos con MySql,
-                        gestión de dependencias con Maven, generación de código con SwaggerEditor</p>
-
-
+                <div class="timeline-info">
+                     <h4><span>jQuery</span><small>I.E.S Trassierra</small></h3>
+                     <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
                 </div>
-            </div>
-        </div>
-
-       <div class="caja-arrow arrow-1">
-        <img src="./assets/arrow.png" onclick="window.location.href='./#experience'" alt="Flecha"
-        class="icon arrow arrow-1">
-       </div>
-           
-    </section>
-
-
-    <section id="experience">
-        <h1 class="title stack">TECNOLOGÍAS</h1>
-        <div class="experience-details-container">
-            
-            <div class="details-containers">
-                <div class="skills">
-                  
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-oreja-240.png" alt="Logo de Bootstrap" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-viento-de-cola-css-240.png" alt="Logo de Tailwind CSS" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-angular-240.png" alt="Logo de Angular" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-hablar-con-descaro-a-240.png" alt="Logo de SASS" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-javascript-240.png" alt="Logo de JavaScript" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/icons8-mecanografiado-240.png" alt="Logo de TypeScript" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                  
-                </div>
-            </div>
-            
-            <div class="details-containers">
-                <div class="skills">
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/springboot-logo.png" alt="Logo de SpringBoot" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/nodejs-logo.png" alt="Logo de NodeJS" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/laravel-logo.png" alt="Logo de Laravel" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/mysql-logo.png" alt="Logo de MySQL" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a href="#" class="box">
-                                        <img src="./assets/mongodb-logo.png" alt="Logo de MongoDB" class="box__image">
-                                    </a>
-                                </div>
-                                <div class="flip-card-back">
-                                    <!-- Reverso eliminado -->
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-
-        <div class="caja-arrow">
-            <img src="./assets/arrow.png" onclick="window.location.href='./#projects'" alt="Flecha"
-            class="icon arrow ">
            </div>
+                    
 
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <h2 class="mb-4 mobile-mt-2">BackEnd</h2>
+
+                  <div class="timeline">
+                      <div class="timeline-wrapper">
+                           <div class="timeline-yr">
+                                <span><img src="./images/project/icons8-logotipo-de-primavera-240.png" alt=""></span>
+                           </div>
+                           <div class="timeline-info">
+                                <h4><span>SpringBoot</span><small>Coderit S.R.L</small></h3>
+                                <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                           </div>
+                      </div>
+
+                      <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span><img src="./images/project/icons8-mysql-240.png" alt=""></span>
+                          </div>
+                          <div class="timeline-info">
+                              <h4><span>MySql</span><small>Coderit S.R.L</small></h3>
+                              <p>Me aventuré por la rama tecnológica y descubrí que me encantaba la tecnología y la informática</p>
+                          </div>
+                      </div>
+
+
+                      <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span><img src="./images/project/mongodb_original_wordmark_logo_icon_146425.png" alt=""></span>
+                        </div>
+                        <div class="timeline-info">
+                            <h4><span>MongoDB</span><small>I.E.S Trassierra</small></h3>
+                            <p>Me aventuré por la rama tecnológica y descubrí que me encantaba la tecnología y la informática</p>
+                        </div>
+                    </div>
+
+
+                      <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span><img src="./images/project/Laravel.png" alt=""></span>
+                        </div>
+                        <div class="timeline-info">
+                            <h4><span>Laravel</span><small>I.E.S Trassierra</small></h3>
+                            <p>Me aventuré por la rama tecnológica y descubrí que me encantaba la tecnología y la informática</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                           <span><img src="./images/project/icons8-nodejs-240.png" alt=""></span>
+                      </div>
+                      <div class="timeline-info">
+                           <h4><span>NodeJs</span><small>I.E.S Trassierra</small></h3>
+                           <p>Poseo un ciclo formativo de grado superior en desarrollo web con tecnologías </p>
+                      </div>
+                 </div>
+                      
+                    
+
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </section>
+
+
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mx-auto">
+            <div class="contact-form">
+              <h1 class="mb-4 text-center">Contacto</h1>
+
+                <div class="row d-flex mt-5">
+                  <div class="col-lg-6 col-12 text-center">
+                    <div>
+                      <img src="./images/project/linkedin.png" class="connect" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-12 text-center">
+                    <img src="./images/project/linkedin.png" class="connect" alt="">
+                  </div>
+
+                 
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <script src="app.js"></script>
-</body>
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
 
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
 </html>
