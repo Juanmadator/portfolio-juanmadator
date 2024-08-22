@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -59,27 +59,26 @@ a {
     text-decoration: none;
     color: black;
     text-decoration-color: white;
-    
 }
 
 
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 11vh;
+    height: 8vh;
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: rgb(181, 181, 181) 10px solid
 }
 
 .logo {
@@ -133,7 +132,7 @@ a:hover {
 
 .menu-links a {
     display: block;
-    padding: 10px;
+    padding: 3px;
     text-align: center;
     font-size: 1.5rem;
     color: black;
@@ -223,6 +222,7 @@ a:hover {
 }
 
 .cv-text {
+    color: rgb(35, 33, 43);
     /* Inicialmente visible */
     opacity: 1;
     visibility: visible;
@@ -272,7 +272,7 @@ a:hover {
     align-self: center;
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 
@@ -287,6 +287,7 @@ a:hover {
 }
 
 .section__text__p1 {
+    font-size: 18px;
     text-align: center;
 }
 
@@ -302,6 +303,30 @@ a:hover {
     text-align: center;
 }
 
+.main{
+    font-size: 70px;
+}
+
+.main-2{
+    text-align: end;
+    font-size: 50px;
+}
+
+.texto-desarrollador-1{
+font-size: 30px;
+text-align: start;
+}
+
+
+.texto-desarrollador{
+    font-size: 30px;
+    text-align: start;
+    }
+    .texto-desarrollador-2{
+        font-size: 50px;
+        text-align: end;
+        }
+    
 
 #socials-container {
     display: flex;
@@ -309,6 +334,51 @@ a:hover {
     margin-top: 1rem;
     gap: 1rem;
 }
+
+.linkedin img,.git img{
+    height: 40px;
+    width: 40px;
+}
+
+#socials-container .linkedin,#socials-container .git{
+    width: 50px;
+    height: 50px;
+    transition: 0.1s all ease;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    padding: 6px;
+    transition: 0.3s all ease-in-out;
+}
+
+.linkedin:hover img{
+    filter: invert(100%);
+}
+
+.linkedin:hover{
+    background-color: rgb(49, 124, 168);
+}
+
+.linkedin img{
+    transition: 0.3s all ease-in-out;
+}
+
+
+.git:hover img{
+    filter: invert(100%);
+}
+
+.git:hover{
+    background-color: rgb(28, 29, 29);
+}
+
+.git img{
+    transition: 0.3s all ease-in-out;
+}
+
+
+
+
 
 .icon {
     cursor: pointer;
@@ -329,13 +399,10 @@ a:hover {
     transition: 0.3s all ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 2rem;
+    border-radius: 0.3rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
+
 
 
 
@@ -359,29 +426,33 @@ a:hover {
 
 
 
-.btn-color-2:hover {
-   border: rgb(255,255,255) 0.1rem solid;
-}
-
-
 .btn-color-2 {
-background: none;
+    color: white;
+    background-color: #a9c6ec;
 }
+
+
+
 
 .btn-container{
     gap: 2rem;
 }
 
 img.about-pic{
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
-#about{
+#about {
     position: relative;
-    background-color:  #f8f7f4;
+    background: linear-gradient(to bottom, #d0e2f0 0%, #ffffff 100%); /* Gradiente que se disipa completamente hacia el blanco */
     color: black;
     padding: 70px 100px;
+    padding-bottom: 150px;
 }
+
+
+
+
 
 .section-container{
     gap: 4rem;
@@ -391,9 +462,7 @@ img.about-pic{
     margin: 0 auto;
 }
 
-.about-containers,.about-details-container{
-    display: flex;
-}
+
 
 .about-containers{
     gap: 2rem;
@@ -407,17 +476,37 @@ img.about-pic{
 }
 
 
+.arrow {
+filter: invert(100%);
+}
 
-.arrow{
+.caja-arrow{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
     position: absolute;
     right: 4rem;
     bottom: 2.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(110, 118, 228); /* Mantén el fondo de la flecha en el color deseado */
+
 }
 
-.arrow-1{
-filter: invert(100);
-
+.arrow img {
+    filter:  invert(100%); /* Haciendo la imagen blanca */
 }
+
+
+
+.caja-arrow.arrow-1{
+    margin-bottom: 39px;
+}
+
+
+
 
 
 
@@ -461,8 +550,7 @@ filter: invert(100);
 
 .cv
 {
-    color: white;
-        background-color:  rgb(50, 55, 92);
+    color: black;
     
 }
 
@@ -470,23 +558,26 @@ filter: invert(100);
 /*SOLUCIONAR ABAJO*/
 
 
-.article-container{
+.article-container {
+    border-radius: 20px;
     color: black;
     text-align: center;
-    border: 0.1rem solid rgb(185, 181, 179);
-    height: 200px;
-    width: 300px;
     margin: 10px;
-    padding: 10px 30px;
     display: grid;
     place-items: center;
     transition: 0.3s all ease;
 }
 
 
+
+
 /*FONDO PARA CUANDO SE HACE HOVER EN LAS CARTAS*/
 .article-container:hover{
     
+}
+
+.stack{
+    padding-bottom: 25px;
 }
 
 .article-container article div p{
@@ -517,71 +608,91 @@ filter: invert(100);
    
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Añade profundidad a la vista 3D */
+.flip-card{
+    transition: 0.3s all ease-in-out;
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s; /* Duración del giro */
-    transform-style: preserve-3d; /* Mantiene la apariencia 3D */
+.flip-card:hover{
+    transform: scale(1.2);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front{
+    padding: 15px;
+}
+
+.flip-card-front img{
+    width: 80px;
+    height: 80px;
+}
+
+.experience-details-container{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+
+
+
+.custom-shape-divider-top-1724281488 {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Oculta la parte trasera cuando está girada */
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.flip-card-front {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff; /* Fondo blanco para la parte frontal */
+.custom-shape-divider-top-1724281488 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 93px;
 }
 
-.flip-card-front img {
-    width: 100px;
-    height: 100px;
+.custom-shape-divider-top-1724281488 .shape-fill {
+    fill: #FFFFFF;
 }
 
-.flip-card-back {
-    transform: rotateY(180deg); /* Rota la parte trasera 180 grados */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.about-me{
+    padding-top: 100px;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Aplica el giro al hacer hover */
+.custom-shape-divider-bottom-1724281422 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    .flip-card {
-        width: 100%;
-        height: auto;
-        max-width: 300px; /* Limita el ancho máximo */
-    }
-
-    .flip-card-front img, .flip-card-back img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .flip-card-inner {
-        transition: transform 0.6s; /* Garantiza una transición suave */
-    }
+.custom-shape-divider-bottom-1724281422 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 117px;
 }
 
-/* CSS para manejar el clic en móviles */
-.flip-card.clicked .flip-card-inner {
-    transform: rotateY(180deg); /* Aplica el giro cuando se hace clic */
+.custom-shape-divider-bottom-1724281422 .shape-fill {
+    fill: #FFFFFF;
 }
+
+
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    margin-bottom: 4rem;
+  }
+  

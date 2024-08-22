@@ -42,14 +42,19 @@
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/perfil-photo.JPG" alt="Imagen Juan Manuel Adame">
+        <div class="section__pic-container section__pic-container-primera">
+                <img src="assets/perfil-photo.JPG" alt="Imagen Juan Manuel Adame" class="main-image">
+               
         </div>
+        
 
         <div class="section__text">
-            <p class="section__text__p1">¡Hola!, soy </p>
-            <h1 class="title">Juanma</h1>
-            <p class="section__text__p2 ">Desarrollador Full Stack</p>
+            <p class="section__text__p1 texto-desarrollador-1">¡Hola!, soy </p>
+            <h1 class="title main">Juan Manuel</h1>
+            <h2 class="main-2">Adame</h2>
+            <p class="section__text__p2 texto-desarrollador">Desarrollador </p>
+            <p class="section__text__p2 texto-desarrollador-2">Full Stack </p>
+
 
             <div class="btn-container curri">
                 <button class="btn btn-color-2 cv" onclick="window.open('./assets/AdameTorronterasJuanManuelCV.pdf')">
@@ -59,10 +64,14 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon"
+                <div class="linkedin">
+                    <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon"
                     onclick="location.href='https://www.linkedin.com/in/juanmadator/'">
+                </div>
+               <div class="git">
                 <img src="./assets/github.png" alt="Mi perfil de Github" class="icon"
-                    onclick="location.href='https://github.com/Juanmadator'">
+                onclick="location.href='https://github.com/Juanmadator'">
+               </div>
             </div>
 
         </div>
@@ -72,9 +81,14 @@
     <div class="abajo"> <img src="./assets/arrow.png" onclick="window.location.href='./#about'" alt="Flecha"
             class="icon"></div>
 
-
+            
     <section id="about">
-        <h1 class="title about-me">Sobre mí</h1>
+        <div class="custom-shape-divider-top-1724281488">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <h1 class="title about-me">EXPERIENCIA</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/about-pic.jpeg" alt="Foto de perfil" class="about-pic">
@@ -82,18 +96,11 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Icono de experiencia" class="icon">
-                        <h3>Experiencia</h3>
-                        <p>3 meses <br> BackEnd </p>
+                        <img src="https://static.wixstatic.com/media/57840c_329d115320ae47339b9b8cbe1fcc8126~mv2.png/v1/fill/w_70,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/coderit_pict_circle_white_color_on_transparent_png_x512_border.png" alt="Icono de experiencia" class="icon">
+                        <h3>Desarrollador BackEnd</h3>
+                        <p>Marzo 2024 - Junio 2024 <br> </p>
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Icono de educación" class="icon">
-                        <h3>Estudios</h3>
-                        I.E.S Trassierra
-                        <p>Desarrollo de Aplicaciones Web
-                            <br>2022-2024
-                        </p>
-                    </div>
+                   
                 </div>
 
                 <div class="text-container">
@@ -111,34 +118,32 @@
             </div>
         </div>
 
+       <div class="caja-arrow arrow-1">
         <img src="./assets/arrow.png" onclick="window.location.href='./#experience'" alt="Flecha"
-            class="icon arrow arrow-1">
+        class="icon arrow arrow-1">
+       </div>
+           
     </section>
 
 
     <section id="experience">
-        <p class="section__text__p1">Explorar mis</p>
-        <h1 class="title">Tecnologías</h1>
+        <h1 class="title stack">TECNOLOGÍAS</h1>
         <div class="experience-details-container">
             
             <div class="details-containers">
-                <h2 class="experience-sub-title">FrontEnd</h2>
                 <div class="skills">
+                  
+            
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/icons8-html5-240.png" alt="Logo de HTML" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-oreja-240.png" alt="Logo de Bootstrap" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>HTML</h3>
-                                        <p>Avanzado</p>
-                                        <p>Capaz de crear estructuras web sólidas y semánticas, optimizando para SEO y accesibilidad.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
@@ -148,17 +153,12 @@
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/css-3.png" alt="Logo de CSS" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-viento-de-cola-css-240.png" alt="Logo de Tailwind CSS" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>CSS</h3>
-                                        <p>Avanzado</p>
-                                        <p>Experto en estilización de interfaces, aplicando técnicas avanzadas de layout y animaciones.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
@@ -168,17 +168,12 @@
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/icons8-oreja-240.png" alt="Logo de Bootstrap" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-angular-240.png" alt="Logo de Angular" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>Bootstrap</h3>
-                                        <p>Intermedio</p>
-                                        <p>Capaz de desarrollar rápidamente interfaces responsivas utilizando el framework Bootstrap.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
@@ -188,17 +183,12 @@
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/icons8-viento-de-cola-css-240.png" alt="Logo de Tailwind CSS" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-hablar-con-descaro-a-240.png" alt="Logo de SASS" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>Tailwind CSS</h3>
-                                        <p>Intermedio</p>
-                                        <p>Competente en la creación de diseños personalizados y optimizados con utilidades de Tailwind.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
@@ -208,17 +198,12 @@
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/icons8-angular-240.png" alt="Logo de Angular" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-javascript-240.png" alt="Logo de JavaScript" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>Angular</h3>
-                                        <p>Intermedio/Avanzado</p>
-                                        <p>Experiencia en el desarrollo de aplicaciones web complejas y escalables utilizando Angular.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
@@ -228,193 +213,107 @@
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="./assets/icons8-hablar-con-descaro-a-240.png" alt="Logo de SASS" class="tech-logo">
+                                    <a href="#" class="box">
+                                        <img src="./assets/icons8-mecanografiado-240.png" alt="Logo de TypeScript" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>SASS</h3>
-                                        <p>Básico/Intermedio</p>
-                                        <p>Capacidad de escribir CSS modular y reutilizable utilizando preprocesador SASS.</p>
-                                    </div>
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
             
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./assets/icons8-javascript-240.png" alt="Logo de JavaScript" class="tech-logo">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>JavaScript</h3>
-                                        <p>Intermedio/Avanzado</p>
-                                        <p>Desarrollo de funcionalidades dinámicas y manipulaciones del DOM con JavaScript.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./assets/icons8-mecanografiado-240.png" alt="Logo de TypeScript" class="tech-logo">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>TypeScript</h3>
-                                        <p>Intermedio/Avanzado</p>
-                                        <p>Programación robusta y escalable con TypeScript, aprovechando el tipado estático.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-            
-                    <div class="article-container">
-                        <article class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./assets/ajax.png" alt="Logo de AJAX" class="tech-logo">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>AJAX</h3>
-                                        <p>Intermedio/Avanzado</p>
-                                        <p>Implementación de solicitudes asíncronas para mejorar la experiencia del usuario en aplicaciones web.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                  
                 </div>
             </div>
             
-
-
             <div class="details-containers">
-                <h2 class="experience-sub-title">Desarrollador BackEnd</h2>
-
                 <div class="skills">
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>SpringBoot</h3>
-                                        <p>Intermedio</p>
-                                    </div>
+                                    <a href="#" class="box">
+                                        <img src="./assets/springboot-logo.png" alt="Logo de SpringBoot" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <img src="./assets/springboot-logo.png" alt="Logo de SpringBoot" class="tech-logo">
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
-                
+            
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>NodeJS</h3>
-                                        <p>Intermedio</p>
-                                    </div>
+                                    <a href="#" class="box">
+                                        <img src="./assets/nodejs-logo.png" alt="Logo de NodeJS" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <img src="./assets/nodejs-logo.png" alt="Logo de NodeJS" class="tech-logo">
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
-                
+            
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>Laravel</h3>
-                                        <p>Básico/Intermedio</p>
-                                    </div>
+                                    <a href="#" class="box">
+                                        <img src="./assets/laravel-logo.png" alt="Logo de Laravel" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <img src="./assets/laravel-logo.png" alt="Logo de Laravel" class="tech-logo">
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
-                
+            
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>MySQL</h3>
-                                        <p>Intermedio/Avanzado</p>
-                                    </div>
+                                    <a href="#" class="box">
+                                        <img src="./assets/mysql-logo.png" alt="Logo de MySQL" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <img src="./assets/mysql-logo.png" alt="Logo de MySQL" class="tech-logo">
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
-                
+            
                     <div class="article-container">
                         <article class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <div class="image-tic">
-                                        <img src="./assets/checkmark.png" alt="Icono de experiencia" class="icon">
-                                    </div>
-                                    <div>
-                                        <h3>MongoDB</h3>
-                                        <p>Básico/Intermedio</p>
-                                    </div>
+                                    <a href="#" class="box">
+                                        <img src="./assets/mongodb-logo.png" alt="Logo de MongoDB" class="box__image">
+                                    </a>
                                 </div>
                                 <div class="flip-card-back">
-                                    <img src="./assets/mongodb-logo.png" alt="Logo de MongoDB" class="tech-logo">
+                                    <!-- Reverso eliminado -->
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
-                
-                
-
             </div>
+            
 
         </div>
 
-        <img src="./assets/arrow.png" onclick="window.location.href='./#projects'" alt="Flecha" class="icon arrow">
+        <div class="caja-arrow">
+            <img src="./assets/arrow.png" onclick="window.location.href='./#projects'" alt="Flecha"
+            class="icon arrow ">
+           </div>
 
     </section>
 
